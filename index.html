@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <header class="header-container">
+            <figure>
+                <img src="./images/logo.svg" alt="" />
+                <h2>Alura Latam</h2>
+            </figure>
+            <nav>
+                <ul class="list-container">
+                    <li class="list">Encriptador</li>
+                    <li class="list">Ahorcado</li>
+                    <li class="list">Loading...</li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-container">
+            <div class="container">
+                <section class="section-encrypted">
+                    <h2>
+                        INGRESE EL TEXTO A <br />
+                        ENCRIPTAR/DESENCRIPTAR
+                    </h2>
+
+                    <div class="container-textarea">
+                        <textarea
+                            name=""
+                            id="textarea-content"
+                            autofocus
+                            placeholder="ingrese texto..."
+                        ></textarea>
+                        <div class="background-textarea">
+                            <h2>Ingrese texto...</h2>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn btn-encrypted">Encriptar</button>
+                        <button class="btn btn-decrypted">Desencriptar</button>
+                    </div>
+                </section>
+                <section class="section-text-encrypted">
+                    <div class="text-void">
+                        <figure>
+                            <img src="./images/person.svg" alt="" />
+                        </figure>
+                        <div class="text-void-content">
+                            <h2>Ningún mensaje fue encontrado</h2>
+                            <p>
+                                Ingresa el texto que desees <br />
+                                encriptar o desencriptar.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="container-texts">
+                        <!-- <article class="article-text">
+                            <div class="text">text lorem ipsum dolor sit</div>
+                        </article> -->
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="social-media">
+                <img src="./images/github.svg" alt="" />
+                <img src="./images/linkedin.svg" alt="" />
+                <img src="./images/twitter.svg" alt="" />
+            </div>
+        </footer>
+
+        <script type="module" src="./script/app.js"></script>
+    </body>
+</html>
