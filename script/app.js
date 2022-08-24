@@ -32,7 +32,6 @@ buttonEncryptor.addEventListener("click", function () {
         const similarText = texts.find((text) => text === textEncryted);
 
         if (similarText) {
-            console.log("el texto ya existe, ingrese uno nuevo");
             backgroundTextArea.classList.add("message-textarea");
             backgroundTextAreaTitle.textContent =
                 "el texto ya se encuentra encriptado...";
@@ -41,7 +40,6 @@ buttonEncryptor.addEventListener("click", function () {
                 backgroundTextAreaTitle.textContent = "Ingrese texto...";
             }, 2000);
         } else {
-            console.log("el texto no existe");
             texts = [...texts, textEncryted];
             textArea.value = "";
             domContentLoaded();
@@ -62,7 +60,6 @@ buttonDecryptor.addEventListener("click", function () {
         );
 
         if (textEncrytedIndex === -1) {
-            console.log("no encontrado");
             backgroundTextArea.classList.add("message-textarea");
             backgroundTextAreaTitle.textContent = "Texto no encontrado...";
             setTimeout(function () {
@@ -74,7 +71,6 @@ buttonDecryptor.addEventListener("click", function () {
         }
 
         const textEncryted = decrypted(textArea.value);
-        // console.log(textEncryted);
         texts[textEncrytedIndex] = textEncryted;
         textArea.value = "";
         loadTexts();
@@ -94,8 +90,6 @@ buttonDecryptor.addEventListener("click", function () {
 });
 
 function loadTexts() {
-    console.log("llamando loadTexts");
-
     textsContainer.innerHTML = "";
 
     texts.forEach(function (text) {
